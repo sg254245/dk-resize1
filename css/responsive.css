@@ -361,12 +361,12 @@
 }
 
 /* =============================
-   Mobile Styles (max-width: 400px)
+   Mobile Styles (max-width: 600px)
    ============================= */
 @media (max-width: 600px) {
 
     .character-reference-box {
-        padding: 100px 20px 100px 20px;
+        padding: 100px 30px 100px 20px;
     }
 
     /* Character Reference Cards - Container */
