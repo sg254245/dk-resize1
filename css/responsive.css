@@ -4,16 +4,13 @@
 
   @media screen and (max-width: 1130px) {
     * {
-        outline: 1px solid blue;
+        padding: 0;
         box-sizing: border-box;
       }
       
       html, body {
-        margin: 0;
-        padding: 0;
         width: 100%;
-        overflow-x: hidden; /* Prevents horizontal scrolling */
-    }
+        overflow-x: hidden;
       }
    }
  
@@ -58,9 +55,6 @@
         padding: 30px 0; /* Reduced padding */
         text-align: center;
         position: relative;
-        width: 100%;
-    text-align: center;
-
     }
     
     .logo-link {
@@ -84,14 +78,13 @@
         position: absolute;
         top: 220px;  /* Adjusted top position */
         left: 50%;
+        transform: translateX(-50%);
+        width: 95%;  /* Slightly wider for tablets */
         padding: 15px 0;  /* Reduced padding */
         text-align: center;
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
         z-index: 1000;
-        width: 100% !important;
-        left: 0 !important;
-        transform: none !important;
     }
     
     .nav-links li {
@@ -164,9 +157,6 @@
           width: 100%; /* Full width */
           position: relative;
           display: inline-block; /* Ensures it wraps around the image */
-        max-width: 100%;
-        margin: 0 auto;
-        text-align: center;
         }
       
         /* Styles the character image */
@@ -216,10 +206,6 @@
    @media screen and (max-width: 1020px) {
     .hero-box {
         padding: 30px;
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        text-align: center;
     }
 
     .hero-box h1 {
