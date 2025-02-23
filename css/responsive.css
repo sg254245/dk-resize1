@@ -1,8 +1,8 @@
 /* =============================
   DK RAP SONG CSS DOCUMENT - UPDATED 2025 - Responsive Design
   ============================= */
- 
-@media screen and (max-width: 1130px) {
+
+  @media screen and (max-width: 1130px) {
     * {
         padding: 0;
         box-sizing: border-box;
@@ -10,7 +10,6 @@
       
       html, body {
         width: 100%;
-     
       }
    }
 
@@ -396,6 +395,9 @@
     }
 }
 
+/* =============================
+  Articals
+   ============================= */
 
 @media (max-width: 1040px) {
 /* Article Grid Adjustments */
@@ -457,5 +459,81 @@ footer h4 {
     text-align: center; /* Centers text */
     flex-grow: 1; /* Allows it to take available space */
     padding:  20px 120px;
+}
+}
+
+
+
+
+/* =============================
+ LYRICS PAGE
+   ============================= */
+
+
+@media screen and (min-width: 401px) and (max-width: 1200px)  {
+
+    .lyrics-grid-item-1, 
+    .lyrics-grid-item-3 {
+        margin: 0px -90px 0px -90px; /* Increase spacing for tablet view */
+    }
+}
+.lyrics-box {
+ 
+    padding: 20px 210px 80px 210px;
+    
+}
+
+ @media screen and (max-width: 400px) {
+
+    .lyrics-box {
+        padding: 20px 120px 80px 120px;
+    }
+
+    .lyrics-grid-item-1, 
+    .lyrics-grid-item-3 {
+        margin: 0px -160px 0px -160px; /* Increase spacing for tablet view */
+    }
+
+
+/* Start/Stop Karaoke Button */
+.btn-label-left {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    margin-right: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.btn-label-left:hover {
+    background: #ffaa00;
+}
+
+/* Style the buttons */
+ .btn-label-right {
+    display: inline-block;
+    padding: 10px 10px;
+    background: #ffcc00;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    text-decoration: none;
+    margin-left: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+  
+}
+
+.btn-label-left:hover, .btn-label-right:hover {
+    background: #ffaa00;
 }
 }
