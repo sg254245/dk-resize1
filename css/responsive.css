@@ -466,6 +466,7 @@ footer h4 {
 
 
 
+
 /* =============================
  LYRICS PAGE
    ============================= */
@@ -538,3 +539,24 @@ footer h4 {
     background: #ffaa00;
 }
 }
+
+@media screen and (max-width: 400px) {
+    /* Adjust the gif-container to a row layout */
+    .gif-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Space between GIF and button */
+    }
+
+    /* Move Print Lyrics button to the left */
+    .print-btn {
+        width: auto; /* Auto-size based on text */
+        align-self: center; /* Center vertically */
+        order: -1; /* Moves button to the left of the GIF */
+        margin-left: -505px;
+    }
+}
+
+  
