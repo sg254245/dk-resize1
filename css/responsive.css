@@ -559,4 +559,81 @@ footer h4 {
     }
 }
 
+
+
+
+/* =============================
+         FUN FACTS PAGE
+   ============================= */
+
+
+   /* =============================
+   FUN FACTS AND MEMES PAGE - Responsive Design
+   ============================= */
+
+/* 📱 Tablet View (Between 601px and 1024px) */
+@media screen and (max-width: 1024px) {
+    .memes-box {
+        padding: 40px 50px; /* Reduce padding */
+    }
+
+    .media-box-card {
+        max-width: 90%; /* Slightly reduce width for better fit */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .media-box-image {
+        height: 250px; /* Slightly smaller image height */
+    }
+
+    .media-box-text {
+        padding: 0 15px; /* Reduce padding */
+    }
+
+    .media-box-text img {
+        width: 280px; /* Smaller floating image */
+        height: auto;
+    }
+}
+
+/* 📱 Mobile View (600px and below) */
+@media screen and (max-width: 600px) {
+    .memes-box {
+        padding: 30px 50px; /* Reduce padding */
+    }
+
+    .memes-box h1 {
+        font-size: 24px; /* Slightly smaller heading */
+    }
+
+    .media-box-card {
+        max-width: 100%; /* Full width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .media-box-image {
+        height: 200px; /* Reduce image height */
+    }
+
+    .media-box-text {
+        padding: 0 10px; /* Reduce padding */
+    }
+
+    .media-box-text h2 {
+        font-size: 18px; /* Smaller headings */
+    }
+
+    .media-box-text p {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+
+    .media-box-text img {
+        width: 220px; /* Reduce floating image size */
+        height: auto;
+        float: none; /* Remove float to stack image above text */
+        display: block;
+        margin: 0 auto 10px auto; /* Center image */
+    }
+}
+
   
