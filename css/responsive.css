@@ -597,7 +597,7 @@ footer h4 {
 }
 
 /* 📱 Mobile View (600px and below) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     .memes-box {
         padding: 30px 50px; /* Reduce padding */
     }
