@@ -1,70 +1,51 @@
 <!-- This is the lyrics page-->
 
-<!DOCTYPE html> <!-- This starts the document -->
-<html lang="en"> <!-- This starts the page and specifies English as the language -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <!-- Meta information -->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donkey Kong Rap</title>
-    
-    <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="../css/styles.css">
 
-    <style>
-        /* Default cursor (normal pointer) */
-        body {
-            cursor: auto;
-        }
-    
-        /* Change cursor when hovering over any element */
-        body *:hover {
-            cursor: url('../images/microphone-cursor.png'), auto;
-        }
-    </style>
-    
-        
+    <title>Donkey Kong Rap</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
+<body>
+   <!-- Header Section: Contains the logo and navigation menu -->
+   <header>
+    <a href="index.html" class="logo-link">THE DK RAP SONG</a>
 
-<body> <!-- This is the main content section of the webpage -->
+    <!-- Hamburger Menu Checkbox -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-    <!-- Header Section: Contains the logo and navigation menu -->
-    <header>
-        <div class="logo">
-            <!-- Logo linking back to the homepage -->
-            <a href="index.html" class="logo-link">THE DK RAP SONG</a>
-        </div>
-        
-        <!-- Navigation Menu: Contains links to different sections/pages -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li> <!-- Link to the homepage -->
-                <li><a href="lyrics.html">Lyrics</a></li> <!-- Link to the lyrics page -->
-                <li><a href="index.html#dk-rap">Rap Video</a></li> <!-- Link to the DK Rap video section -->
-                <li>
-                    <a href="intro.html">Intro</a>
-                    
-                    <!-- Dropdown menu for character links -->
-                    <ul>
-                        <li><a href="dk.html">DK</a></li> <!-- Link to Donkey Kong's page -->
-                        <li><a href="tiny.html">Tiny</a></li> <!-- Link to Dixie's page -->
-                        <li><a href="lanky.html">Lanky</a></li> <!-- Link to Lanky's page -->
-                        <li><a href="diddy.html">Diddy</a></li> <!-- Link to Diddy's page -->
-                        <li><a href="chunky.html">Chunky</a></li> <!-- Link to Chunky's page -->
-                    </ul>
-                </li>
-                <li><a href="crankysfridge.html">Cranky's Fridge</a></li> <!-- Link to Cranky's Fridge section -->
-                <li><a href="funfacts.html">Fun Facts and Memes</a></li> <!-- Link to Fun Facts and Memes section -->
-            </ul>
-        </nav>
-    </header>
-
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lyrics.html">Lyrics</a></li>
+            <li><a href="index.html#dk-rap">Rap Video</a></li>
+            <li>
+                <a href="#">Intro</a>
+                <ul>
+                    <li><a href="characters/intro.html">DK</a></li>
+                    <li><a href="characters/dk.html">DK</a></li>
+                    <li><a href="characters/tiny.html">Tiny</a></li>
+                    <li><a href="characters/lanky.html">Lanky</a></li>
+                    <li><a href="characters/diddy.html">Diddy</a></li>
+                    <li><a href="characters/chunky.html">Chunky</a></li>
+                </ul>
+            </li>
+            <li><a href="crankysfridge.html">Cranky's Fridge</a></li>
+            <li><a href="funfacts.html">Fun Facts and Memes</a></li>
+        </ul>
+    </nav>
+</header>
 <!-- Floating Call-To-Action Button -->
 <div class="scrolling-cta-box">
-    <img src="../images/video-icon.png" alt="Video Icon" class="cta-icon">
+    <img src="images/video-icon.png" alt="Video Icon" class="cta-icon">
     <a href="index.html#dk-rap" class="cta-link">Video</a> 
 </div>
 
@@ -78,7 +59,7 @@
 <div class="lyrics-grid-container">
     <!-- Left Speaker Box -->
     <div class="lyrics-grid-item-1">
-        <img src="../images/left-speaker.png" alt="Left Image Placeholder">
+        <img src="images/left-speaker.png" alt="Left Image Placeholder">
         <label for="scrollToggle" class="btn-label-left">Start/Stop<br> Karaoke</label>
     </div>
 
@@ -98,7 +79,7 @@
 
     <!-- Audio Player -->
     <audio controls>
-        <source src="../assets/dk-rap.mp3" type="audio/mpeg">
+        <source src="assets/dk-rap.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -119,7 +100,7 @@
 
    <!-- Right Speaker Box (Now a Back to Top Button) -->
 <div class="lyrics-grid-item-3">
-    <img src="../images/right-speaker.png" alt="Right Speaker">
+    <img src="images/right-speaker.png" alt="Right Speaker">
     <a href="lyrics.html" class="btn-label-right">Reset Karoke</a>
 </div>
 </div>
@@ -272,13 +253,10 @@
 <footer>
     <h4>Donkey Kong Rap &copy; 2025</h4>
     <div class="back-to-top-wrapper">
-        <img src="../images/barrel-outline.png" alt="Barrel" class="back-to-top-image">
+        <img src="images/barrel-outline.png" alt="Barrel" class="back-to-top-image">
         <a href="#" class="back-to-top">↑ Back to Top</a>
     </div>
 </footer>
 
-</body> <!-- This ends the main content of the page -->
-
-</html> <!-- This ends the HTML document -->
-
-
+</body>
+</html>
